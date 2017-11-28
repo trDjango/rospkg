@@ -672,6 +672,7 @@ OS_MANJARO = 'manjaro'
 OS_CENTOS = 'centos'
 OS_CYGWIN = 'cygwin'
 OS_DEBIAN = 'debian'
+OS_DEEPIN = 'deepin'
 OS_ELEMENTARY = 'elementary'
 OS_ELEMENTARY_OLD = 'elementary'
 OS_FEDORA = 'fedora'
@@ -695,6 +696,7 @@ OsDetect.register_default(OS_MANJARO, Manjaro())
 OsDetect.register_default(OS_CENTOS, Centos())
 OsDetect.register_default(OS_CYGWIN, Cygwin())
 OsDetect.register_default(OS_DEBIAN, Debian())
+OsDetect.register_default(OS_DEEPIN, LsbDetect('"deepin"'))
 OsDetect.register_default(OS_ELEMENTARY, LsbDetect('"elementary"'))
 OsDetect.register_default(OS_ELEMENTARY_OLD, LsbDetect('"elementary OS"'))
 OsDetect.register_default(OS_FEDORA, FdoDetect("fedora"))
